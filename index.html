@@ -14,39 +14,29 @@
             <p class="total-budget">Total Budget: $<span class="budget-amount">0</span></p>
         </header>
 
-        <div>
-            <p>Total Income: $<span>0</span></p>
-            <p>Total Expenses: $<span>0</span></p>
-            <p>Total Balance: $<span>0</span></p>
-        </div>
-    </div>
-    
-    <form id="transaction-form" class="container">
+    <section class="form-section">
+        <form class="transaction-form" class="container">
         <input type="number" placeholder="Amount" required></input>
         <select class="type">
             <option value="income">Income</option>
             <option value="expense">Expense</option>
         </select>
-        <input type = "date"></input>
-        <input type = "date"></input>
-        <input type = "text" placeholder="Add notes"></input>
-
-        <button>Add Transaction</button>
+        <input type="date" required></input>
+        <button type="submit">Add Transaction</button>
     </form>
 
-    <div class="container">
-        <input type="number" id="min-amount" placeholder="Min Amount">
-        <input type="number" id="max-amount" placeholder="Max Amount">
-        <select class="type">
-            <option value="all">All</option>
-            <option value="income">Income</option>
-            <option value="expense">Expense</option>
-        </select>
-        <input type="date"></input>
-        <input type="date"></input>
-        <input type="text" placeholder="Add notes"></input>
-        <button>Apply Filters</button>
-    </div>
+    <section class=""filter-section>
+         <div class="transaction-form">
+            <input type="number" placeholder="Min Amount">
+            <input type="number" placeholder="Max Amount">
+            <select class="type">
+                <option value="all">All</option>
+                <option value="income">Income</option>
+                <option value="expense">Expense</option>
+            </select>
+            <input type="text" placeholder="Add notes"></input>
+            <button>Apply Filters</button>
+        </div>
 
     <script src="scripts/script.js"></script>
 </body>
