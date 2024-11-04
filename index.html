@@ -14,19 +14,19 @@
             <p class="total-budget">Total Budget: $<span class="budget-amount">0</span></p>
         </header>
 
-    <section class="form-section">
-        <form class="transaction-form" class="container">
+    <section>
+        <form class="container">
         <input type="number" placeholder="Amount" required></input>
         <select class="type">
             <option value="income">Income</option>
             <option value="expense">Expense</option>
         </select>
         <input type="date" required></input>
-        <button type="submit">Add Transaction</button>
+        <button type="submit" class="btn">Add Transaction</button>
     </form>
 
-    <section class=""filter-section>
-         <div class="transaction-form">
+    <section>
+         <div>
             <input type="number" placeholder="Min Amount">
             <input type="number" placeholder="Max Amount">
             <select class="type">
@@ -35,7 +35,7 @@
                 <option value="expense">Expense</option>
             </select>
             <input type="text" placeholder="Add notes"></input>
-            <button>Apply Filters</button>
+            <button class="btn">Apply Filters</button>
         </div>
 
     <script src="scripts/script.js"></script>
