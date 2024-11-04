@@ -15,27 +15,27 @@
         </header>
 
     <section>
-        <form class="container">
-        <input type="number" placeholder="Amount" required></input>
-        <select class="type">
+        <form class="transaction-form">
+            <input type="number" class="input amount" placeholder="Amount" required>
+            <select class="type">
             <option value="income">Income</option>
             <option value="expense">Expense</option>
         </select>
-        <input type="date" required></input>
+        <input type="date" class="input date" required>
         <button type="submit" class="btn">Add Transaction</button>
     </form>
 
-    <section>
+    <section class="filter-transactions">
          <div>
-            <input type="number" placeholder="Min Amount">
-            <input type="number" placeholder="Max Amount">
+            <input type="number" class="input filter-min" placeholder="Min Amount">
+            <input type="number" class="input filter-max" placeholder="Max Amount">
             <select class="type">
                 <option value="all">All</option>
                 <option value="income">Income</option>
                 <option value="expense">Expense</option>
             </select>
-            <input type="text" placeholder="Add notes"></input>
-            <button class="btn">Apply Filters</button>
+            <input type="text" class="input filter-notes" placeholder="Add notes"></input>
+            <button class="btn filter-transactions">Apply Filters</button>
         </div>
 
     <script src="scripts/script.js"></script>
