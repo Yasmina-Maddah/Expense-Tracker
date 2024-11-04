@@ -5,5 +5,8 @@ function saveTransactions() {
 }
 
 function loadTransactions() {
-    return JSON.parse(localStorage.getItem('transactions')) || [];
+    return JSON.parse(localStorage.getItem('transaction')) || [];
 }
+
+document.getElementById('transaction-form').addEventListener('submit', handleFormSubmit);
+
